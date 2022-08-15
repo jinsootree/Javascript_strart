@@ -7,15 +7,20 @@
     <title>3의 배수 검사기</title>
 </head>
 <body>
+    <div id = 'result'>
+        
+    </div>
     <script>
         var userNumber = prompt("숫자를 입력하세요.");
-        /*if..else문에서 if문에서 조건이 true가 되면 그 다음에 오는
-        else문은하지 않고 넘어간다. */
+        var displayArea = document.querySelector('#result');
+        /*if..else문에서 if문에서 조건이 true가 되면 그 다음에 오는 else문은하지 않고 넘어간다. */
         if(userNumber != null){
-            alert("숫자가 입력되었습니다.");
+            if (userNumber % 3 === 0)
+            displayArea.innerHTML = userNumber + " 은 3의 배수입니다.";
+            
         }
         else {
-            alert("입력이 취소되었습니다.");
+            displayArea.innerHTML = userNumber + " 은 3의 배수가 아닙니다.";
         }
     </script>
     
