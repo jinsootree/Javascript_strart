@@ -7,4 +7,4 @@ var passedTime = toNow - toFirst;
 
 var passedTime = Math.round( passedTime/(1000 * 60 * 60 * 24)) //밀리초를 날짜수로 변환한 후 올림
 
-document.querySelector("#accent").innerText = passedTime + "일";
+document.querySelector("#accent").innerText = passedTime + "일"; // #accent영역에 표시
