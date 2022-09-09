@@ -6,5 +6,5 @@ function newRegister() {
 
   var nameList = document.querySelector("#nameList");
   nameList.appendChild(newP);
-  userName.vaule = "";
+  userName.value = "";
 }
