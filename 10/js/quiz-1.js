@@ -1,8 +1,7 @@
-function openPop() {
-    var newWin = window.open("\current.html", "", "width=300, height=50");
-    if(newWin == null) {
-      alert("팝업이 차단되어 있습니다. 팝업 차단을 해제하고 새로고침해 주세요.");
-    }
-}
-        
-window.onload = openPop;
+
+//window.onload = window.open("current.html", "", "width=300, height=50");
+
+window.onload = displayTime();
+    function displayTime() {
+      window.open("current.html", "", "width=300, height=50");
+     }
